@@ -1,0 +1,60 @@
+// Flex Mixin
+@mixin flex($align, $justify, $direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+// Grid Mixin
+@mixin grid($columns, $gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-gap: $gap;
+}
+
+// Grid Layouts
+.grid-2 {
+  @include grid(repeat(2, 1fr), 50px);
+}
+
+.grid-3 {
+  @include grid(repeat(3, 1fr), 50px);
+}
+
+.grid-4 {
+  @include grid(repeat(4, 1fr), 50px);
+}
+
+.grid-5 {
+  @include grid(repeat(5, 1fr), 50px);
+}
+
+.grid-6 {
+  @include grid(repeat(6, 1fr), 30px);
+}
+
+// Media Queries
+@media screen and (max-width: 800px) {
+  .grid-6,
+  .grid-4,
+  .grid-5,
+  .grid-3 {
+    @include grid(repeat(2, 1fr), 50px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5,
+  .grid-6 {
+    @include grid(repeat(1, 1fr), 50px);
+  }
+}

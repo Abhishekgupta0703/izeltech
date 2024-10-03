@@ -1,0 +1,197 @@
+@import "function";
+
+// General Styles
+.mail {
+  text-transform: none !important;
+}
+
+// Title Logo Styles
+.title-logo {
+  font-size: $xl-6;
+  -webkit-text-stroke: 1px $white;
+  color: transparent;
+  text-transform: none;
+  
+  span {
+    font-size: $xl-5;
+    -webkit-text-stroke: $green;
+    color: $green;
+  }
+}
+
+// Logo Background Styles
+.logobg {
+  font-size: $xll;
+  
+  span {
+    font-size: 50px;
+  }
+}
+
+// Small Title Styles
+.titleSm {
+  font-size: $xl-3;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+// Title Styles
+.title {
+  font-size: $xl-5;
+  font-weight: 500;
+  background: $gradient2;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+// Title Background Styles
+.title-bg {
+  font-size: 40px;
+}
+
+// Button Styles
+.secondary-button,
+.button-primary {
+  text-transform: capitalize;
+  color: $dark;
+  padding: 13px 25px;
+  background-color: $green;
+  font-size: $md;
+  border-radius: 50px;
+  box-shadow: $shadow-md;
+  cursor: pointer;
+}
+
+.secondary-button {
+  background-color: #171e20;
+  box-shadow: rgba($dark, 5) 0px 7px 29px 0px;
+  color: $white;
+  letter-spacing: 1px;
+  transition: 0.2s ease-in-out;
+  
+  &:hover {
+    color: $green;
+  }
+}
+
+// Heading Title Styles
+.heading-title {
+  text-align: center;
+  max-width: 65%;
+  margin: auto;
+  padding-top: $xll;
+  padding-bottom: $xl-4;
+  
+  p {
+    margin: $lg 0;
+    color: rgba($white, 0.5);
+  }
+}
+
+// Card Styles
+.card {
+  h1 {
+    transition: 0.5s;
+    
+    &:hover {
+      color: $green;
+      cursor: pointer;
+    }
+  }
+  
+  .card-img {
+    margin-bottom: 30px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50px 0 50px 0;
+    }
+  }
+  
+  a {
+    display: flex;
+    align-items: center;
+    color: $indigo;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: $sm;
+    
+    .link-icon {
+      margin-left: $sm;
+    }
+  }
+  
+  span {
+    color: rgba($white, 0.4);
+    margin-top: $xl-3;
+    display: block;
+    letter-spacing: 2px;
+    font-size: $sm;
+  }
+  p{
+    font-size: $xl-1;
+    color: rgba($white, 0.5);
+  }
+  
+  ul {
+    margin-top: $xl-6;
+    
+    li {
+      margin-bottom: $xl-2;
+      opacity: 0.5;
+    }
+  }
+  
+  .title-link {
+    display: block !important;
+    color: $white;
+    letter-spacing: 0px !important;
+    text-transform: capitalize;
+  }
+}
+
+// Slick Slider Styles
+.slick-arrow .next,
+.slick-arrow .prev {
+  position: absolute;
+  top: 45%;
+  width: 50px;
+  height: 50px;
+  background-color: $indigo;
+  z-index: 1;
+  border-radius: 50%;
+  @include flex(center, center, none);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.slick-arrow .next {
+  right: -50px;
+}
+
+.slick-arrow .prev {
+  left: -50px;
+}
+
+.slick-slider {
+  margin: 0 -15px;
+}
+
+// Media Query for Smaller Screens
+@media screen and (max-width: 800px) {
+  .slick-arrow .next,
+  .slick-arrow .prev {
+    display: none;
+  }
+
+  .heading-title {
+    max-width: 100%;
+    padding: 50px 0;
+  }
+}
