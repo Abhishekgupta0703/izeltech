@@ -6,6 +6,8 @@ export default function Home() {
     <>
       <Head>
         <title>izelTech </title>
+        <meta name="description" content="We provide expert web and app development services for businesses of all sizes." />
+        <meta name="keywords" content="web development, IT solutions, agency, app development" />
       </Head>
       <Hero />
     </>

@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /register/
+Allow: /
+
+# Optional: Sitemap location
+Sitemap: https://izeltech.in/sitemap.xml
