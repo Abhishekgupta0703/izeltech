@@ -17,7 +17,7 @@ export const Certifcation = () => {
           <div className="content">
             <div className="left w-40 py">
               <img
-                src="/images/s4.jpg"
+                src="/images/cert.jpg"
                 alt="Img"
                 className="round"
                 width="100%"

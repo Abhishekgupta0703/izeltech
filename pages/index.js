@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>izelTech Desgin</title>
+        <title>izelTech </title>
       </Head>
       <Hero />
     </>

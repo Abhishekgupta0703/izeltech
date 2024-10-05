@@ -561,6 +561,15 @@ footer {
   color: white;
   .content{
     @include flex(center, space-between, row);
+    .left{
+      text-align: center;
+      img{
+        filter: hue-rotate(60deg);
+        // width: 350px;
+        aspect-ratio: 5/4;
+        object-fit: cover;
+      }
+    }
   }
   .certification_content {
     .title {
