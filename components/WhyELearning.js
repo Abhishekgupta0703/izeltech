@@ -18,7 +18,7 @@ function WhyELearning() {
           {whyELearning.map((item) => (
             <div className="guidance-card gradient-border" key={item.id}>
               <div className="image-cover">
-                <img src={item.cover} alt={item.title} />
+                <img src={item.cover} alt={item.title} layout="responsive" />
               </div>
               <div className="content">
                 <h3 className="title">{item.title}</h3>

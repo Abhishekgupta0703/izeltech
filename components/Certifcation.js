@@ -22,6 +22,7 @@ export const Certifcation = () => {
                 className="round"
                 width="100%"
                 height="100%"
+                layout="responsive"
               />
             </div>
             <div className="right w-60 ml certification_content">

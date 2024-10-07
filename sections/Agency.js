@@ -52,6 +52,7 @@ const Agency = () => {
                 className="round"
                 width="100%"
                 height="100%"
+                layout="responsive"
               />
             </div>
           </div>
@@ -64,6 +65,7 @@ const Agency = () => {
                 className="round"
                 width="100%"
                 height="100%"
+                layout="responsive"
               />
             </div>
             <div className="right w-60 ml">

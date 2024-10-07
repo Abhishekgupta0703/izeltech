@@ -7,7 +7,7 @@ export const BlogCard = ({ data, caption, show, path }) => {
     <>
       <div className="card">
         <div className="card-img">
-          <img src={data.cover} alt={data.title} />
+          <img src={data.cover} alt={data.title} layout="responsive"/>
         </div>
         <div className="card-details">
           <Link href={`${path}/${data.id}`} className="title-link">

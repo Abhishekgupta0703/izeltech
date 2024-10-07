@@ -106,7 +106,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">
+                  <Link href="https://www.linkedin.com/company/izeltech/">
                     <AiFillLinkedin size={25} />
                   </Link>
                 </li>

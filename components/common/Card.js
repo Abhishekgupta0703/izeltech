@@ -5,7 +5,7 @@ export const Card = ({ data, caption, show, path }) => {
     <>
       <div className="card" key={data.title}>
         <div className="card-img">
-          <img src={data.cover} alt={data.title} />
+          <img src={data.cover} alt={data.title} layout="responsive" loading="lazy"/>
         </div>
         <div className="card-details">
           <TitleSm title={data.title} />
