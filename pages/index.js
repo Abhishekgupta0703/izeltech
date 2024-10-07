@@ -51,6 +51,7 @@ export default function Home() {
           href="../assets/images/art-top-cropp.jpg"
           as="image"
         />
+        <meta name="google-site-verification" content="tv-I29y6qytpEjdx5YnNkowpGs4iMFb3DNL1bW7-USQ" />
       </Head>
       <Hero />
     </>
